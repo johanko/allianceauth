@@ -276,6 +276,7 @@ ENABLE_AUTH_IPS4 = 'True' == os.environ.get('AA_ENABLE_AUTH_IPS4', 'False')
 ENABLE_AUTH_SMF = 'True' == os.environ.get('AA_ENABLE_AUTH_SMF', 'False')
 ENABLE_AUTH_MARKET = 'True' == os.environ.get('AA_ENABLE_AUTH_MARKET', 'False')
 ENABLE_AUTH_PATHFINDER = 'True' == os.environ.get('AA_ENABLE_AUTH_PATHFINDER', 'False')
+ENABLE_AUTH_FLEETUP = 'True' == os.environ.get('AA_ENABLE_AUTH_FLEETUP', 'False')
 
 #####################
 # Blue service Setup
@@ -304,6 +305,7 @@ ENABLE_BLUE_IPS4 = 'True' == os.environ.get('AA_ENABLE_BLUE_IPS4', 'False')
 ENABLE_BLUE_SMF = 'True' == os.environ.get('AA_ENABLE_BLUE_SMF', 'False')
 ENABLE_BLUE_MARKET = 'True' == os.environ.get('AA_ENABLE_BLUE_MARKET', 'False')
 ENABLE_BLUE_PATHFINDER = 'True' == os.environ.get('AA_ENABLE_BLUE_PATHFINDER', 'False')
+ENABLE_BLUE_FLEETUP = 'True' == os.environ.get('AA_ENABLE_BLUE_FLEETUP', 'False')
 
 #########################
 # Corp Configuration
