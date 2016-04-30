@@ -141,17 +141,18 @@
                         {% endif %}
 
                         {% if  perms.auth.member or perms.auth.blue_member %}
-							<li>
+                            <li>
                                 <a {% ifequal request.path "/fits" %} class="active" {% endifequal %}
                                                                                   href="{% url 'auth_fleet_fits' %}"><i
                                         class="fa fa-bolt fa-fw grayiconecolor"></i> Fleet Doctrines</a>
                             </li>
+                            {% if ENABLE_AUTH_FLEETUP or ENABLE_BLUE_FLEETUP %}
                             <li>
                                 <a {% ifequal request.path "/fleetup" %} class="active" {% endifequal %}
                                                                                   href="{% url 'auth_fleetup_view' %}"><i
                                         class="fa fa-clock-o fa-fw grayiconecolor"></i> Fleet-Up</a>
                             </li>
-
+                            {% endif %}
 			{% endif %}
 
                         {% if  perms.auth.member or perms.auth.blue_member %}
